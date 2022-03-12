@@ -60,8 +60,8 @@ export class TableHogwartsComponent
   ];
   @Input() displayedColumns: string[] = [
     'name',
-    'patronus',
     'species',
+    'patronus',
     'gender',
     'age',
     'image',
