@@ -28,6 +28,17 @@ const routes: Routes = [
         (m) => m.TeachersModule
       ),
   },
+  {
+    path: 'new-students',
+    loadChildren: () =>
+      import('src/app/pages/new-students/new-students.module').then(
+        (m) => m.NewStudentsModule
+      ),
+  },
+  {
+    path: '**',
+    redirectTo: '/characters',
+  },
 ];
 
 @NgModule({
