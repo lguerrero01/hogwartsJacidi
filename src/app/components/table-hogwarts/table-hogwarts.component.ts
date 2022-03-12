@@ -58,12 +58,19 @@ export class TableHogwartsComponent
       textField: 'image',
     },
   ];
-  @Input() displayedColumns: string[] = ['name', 'patronus','species','gender', 'age', 'image'];
+  @Input() displayedColumns: string[] = [
+    'name',
+    'patronus',
+    'species',
+    'gender',
+    'age',
+    'image',
+  ];
   @Input() data: BaseData[] = [];
 
-  dataSource = new MatTableDataSource(this.data || []);
-  defaultText = '-';
-  filterValue = '';
+  public dataSource = new MatTableDataSource(this.data || []);
+  public defaultText = '-';
+  public filterValue = '';
 
   constructor() {}
 
@@ -89,12 +96,12 @@ export class TableHogwartsComponent
    * @function initSortAndPaginator
    * Inicializa el sort y el paginator del MatTableDataSource
    */
-  initSortAndPaginator(): void {
+  public initSortAndPaginator(): void {
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
   }
 
-  applyFilter(): void {
+  public applyFilter(): void {
     try {
       if (this.filterValue || this.filterValue === '') {
         this.dataSource.filter = this.filterValue.trim().toLowerCase();
