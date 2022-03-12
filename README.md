@@ -12,10 +12,9 @@ Para correr el proyecto debera ejecutar (npm install) para instalar dependencias
 1) Para los estilos y el responsive utilice Material UI. 
 2) Modularice y aplique Lazy load o carga perezosa para un mejor rendimiento.
 3) Para el form y las validaciones utilice Reactive Forms.
-5) Para el filtrado Material Table
-6) Para listar datos en el crear nuevo estudiante rxjs.
-6) Todo esta correctamente tipado con su interface.
-
+4) Para listar datos en el crear nuevo estudiante rxjs.
+5) Todo esta correctamente tipado con su interface.
+6) Se reutilizo el componente table mediante inputs
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
