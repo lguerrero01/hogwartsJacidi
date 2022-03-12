@@ -20,7 +20,6 @@ import { BaseData, HogwartsTableHeader } from 'src/app/interfaces';
 export class TableHogwartsComponent
   implements OnInit, AfterViewInit, OnChanges
 {
-
   //////////////
   // Atributes
   /////////////
@@ -39,6 +38,16 @@ export class TableHogwartsComponent
       textField: 'patronus',
     },
     {
+      columnDef: 'species',
+      header: 'Species',
+      textField: 'species',
+    },
+    {
+      columnDef: 'gender',
+      header: 'Gender',
+      textField: 'gender',
+    },
+    {
       columnDef: 'age',
       header: 'Edad',
       textField: 'age',
@@ -49,7 +58,7 @@ export class TableHogwartsComponent
       textField: 'image',
     },
   ];
-  @Input() displayedColumns: string[] = ['name', 'patronus', 'age', 'image'];
+  @Input() displayedColumns: string[] = ['name', 'patronus','species','gender', 'age', 'image'];
   @Input() data: BaseData[] = [];
 
   dataSource = new MatTableDataSource(this.data || []);

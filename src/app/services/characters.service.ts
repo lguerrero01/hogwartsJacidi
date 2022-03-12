@@ -24,6 +24,8 @@ export class CharactersService {
           patronus: character.patronus,
           age: calculateAge(character.dateOfBirth || '', character.yearOfBirth),
           image: character.image,
+          species: character.species,
+          gender: character.gender,
         }));
       })
     );

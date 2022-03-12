@@ -5,6 +5,8 @@ export interface BaseData {
     image: string;
     dateOfBirth?: string;
     yearOfBirth?: number;
+    species?: string;
+    gender?: string
   }
   
   export interface Character extends BaseData {}
