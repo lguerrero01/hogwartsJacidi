@@ -20,3 +20,5 @@ Para correr el proyecto debera ejecutar (npm install) para instalar dependencias
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Demo
+    https://hogwartsjacidi.netlify.app/
+Nota: en la demo solo funcionara la seccion de crear nuevo estudiante debido a problemas de cors con heroku. Para ver todo funcionar correctamente se debe instalar localmente.
